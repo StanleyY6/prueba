@@ -1,0 +1,41 @@
+.titulo-galeria{
+    color: green;
+    text-align: center;
+    font-family: monospace;
+    font-size: 28px
+}
+.banner{
+    background: #6f7085;
+    margin-top:60px;
+    padding-top: 30px
+    
+}
+.contenedor{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+.galeria_img{
+    padding-top: 10px;
+    width: 50%;
+    height: 200px;
+    margin-bottom: 10px;
+    object-fit: contain;
+    filter: brightness(70%);
+   animation: escalar 1.5s infinite alternate;
+}
+@keyframes escalar {
+    to {
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.05);
+    }
+}
+.galeria_img{
+    filter: brightness(100%);
+}
+
